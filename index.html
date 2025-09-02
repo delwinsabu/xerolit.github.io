@@ -207,6 +207,15 @@
         }
 
 
+	.pop-animation {
+	  display: inline-block;
+	  animation-name: pulse-logo;
+	  animation-duration: 3s;
+	  animation-timing-function: ease-out;
+	  animation-fill-mode: forwards;
+	}
+
+
     </style>
 </head>
 
@@ -217,6 +226,8 @@
         <div class="container mx-auto flex justify-between items-center">
             <a href="#hero" class="flex items-center space-x-2">
                 <!-- Replaced image with styled text -->
+		<img src="symb_no_bg.png" alt="Xerolit Logo" class="mx-auto h-8 sm:h-10 mb-1">
+
                 <span class="font-logo text-2xl font-bold text-white tracking-widest">XEROLIT</span>
             </a>
             <div class="hidden md:flex space-x-6 text-tech-silver font-semibold">
@@ -249,7 +260,11 @@
         <div class="animated-background"></div>
         <div class="relative z-10 space-y-8 max-w-4xl mx-auto pt-20">
             <!-- Logo with new pulse animation -->
-            <img src="https://placehold.co/200x200/121212/D3D4DA?text=XEROLIT" alt="Xerolit Logo" class="mx-auto h-24 sm:h-32 mb-4 animate-[pulse-logo_2s_infinite] fade-in rounded-full" style="animation-delay: 0s;">
+	    <!-- <div class="fade-in">
+            	<img src="symb_no_bg.png" alt="Xerolit Logo" class="mx-auto h-14 sm:h-31 animate-[pulse-logo_2s_infinite]" style="animation-delay: 0s;">
+                <span class="mx-auto font-logo text-xl font-bold tracking-widest pop-animation" style="animation-iteration-count: infinite;">XEROLIT</span>
+	    	<img src="https://placehold.co/200x200/121212/D3D4DA?text=XEROLIT" alt="Xerolit Logo" class="mx-auto h-24 sm:h-32 mb-4 animate-[pulse-logo_2s_infinite] rounded-full" style="animation-delay: 0s;">
+	    </div> -->
             <!-- Main Tagline -->
             <h1 class="font-poppins font-bold text-4xl md:text-6xl text-white animate-[tagline-pop-in_1s_ease-out_forwards]" style="animation-delay: 0.8s;">
                 Delivering Beyond the <span class="gradient-text">Curves</span>
